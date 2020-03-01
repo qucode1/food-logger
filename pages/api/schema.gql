@@ -1,17 +1,17 @@
 type allergen {
-    id: ID!,
-    name: string!
+  id: ID!
+  name: string!
 }
 
 type foodItem {
-    id: ID!,
-    name: string!,
-    allergens: [allergen!],
-    ingredients: [foodItem!]
+  id: ID!
+  name: string!
+  allergens: [allergen!]
+  ingredients: [foodItem!]
 }
 
 type meal {
-    id: ID!,
-    time: DateTime!,
-    foodItems: [foodItem!],
+  id: ID!
+  time: DateTime!
+  foodItems: [foodItem!]!
 }
