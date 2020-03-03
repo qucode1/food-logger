@@ -8,19 +8,19 @@ additional problems? bloody, ... allow user to add custom conditions here?
 const date = new Date();
 const user = 'userID';
 
-const mealName = 'Spaghetti Bolognese';
-const mealOriginType = ['homemade', 'TV dinner', 'restaurant'];
+const dishName = 'Spaghetti Bolognese';
+const dishOriginType = ['homemade', 'TV dinner', 'restaurant'];
 // allow custom
-const mealOriginStore = 'rewe';
+const dishOriginStore = 'rewe';
 // allow custom
-const mealOriginRestaurant = 'chinese restaurant dragon';
+const dishOriginRestaurant = 'chinese restaurant dragon';
 // allow custom
-const mealCook = 'me';
-const mealIngredients = [
+const dishCook = 'me';
+const dishIngredients = [
     'ingredientVariantID',
     'spaghetti, tomatoes, onions, ground beef'
 ];
-const mealVariants = ['mealVariantID'];
+const dishVariants = ['dishVariantID'];
 
 const stoolQuality = [0, 1, 2]; // 0 perfect, 2 worst
 const stoolProblem = ['constipation', 'diarrhea'];
@@ -32,21 +32,29 @@ const ingredientBrand = 'golden delicious';
 const ingredientProperties = ['bio', 'gluten-free'];
 const ingredientVariants = ['ingredientVariantID'];
 
+const dishes = ['Linsensuppe', 'Brötchen']
+
 const meal = {
     user,
-    mealName,
-    mealVariants
+    date,
+    dishes
+}
+
+const dish = {
+    user,
+    dishName,
+    dishVariants
 };
 
-const mealVariant = {
+const dishVariant = {
     date,
     user,
-    meal,
-    mealOriginType,
-    mealCook,
-    mealOriginStore,
-    mealOriginRestaurant,
-    mealIngredients
+    dish,
+    dishOriginType,
+    dishCook,
+    dishOriginStore,
+    dishOriginRestaurant,
+    dishIngredients
 };
 
 const stool = {
