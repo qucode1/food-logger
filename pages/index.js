@@ -13,7 +13,11 @@ const HELLO_QUERY = gql`
 const Home = () => {
   const { data, loading, error } = useQuery(HELLO_QUERY);
   
-  if (loading) return <div/>;
+  if (loading) return <div>loading...</div>;
+  if(error) {
+      console.log(error);
+  return <div>Error: {error}</div>
+  }
 
   return (
     <Layout>
