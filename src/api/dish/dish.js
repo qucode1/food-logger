@@ -3,7 +3,8 @@ import mongoose, { Schema } from "mongoose";
 const DishSchema = {
     name: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     variants: {
         type: [Schema.Types.ObjectId],

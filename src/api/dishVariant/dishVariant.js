@@ -8,7 +8,8 @@ const DishVariantSchema = new Schema({
     },
     origin: {
         type: Schema.Types.ObjectId,
-        ref: 'Origin'
+        ref: 'Origin',
+        required: true
     },
 })
 

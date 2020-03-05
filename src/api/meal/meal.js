@@ -3,7 +3,8 @@ import mongoose, { Schema } from 'mongoose';
 const MealSchema = new Schema({
     dishes: {
         type: [Schema.Types.ObjectId],
-        ref: 'MealVariant'
+        ref: 'Dish',
+        required: true
     }
 }, {
     timestamps: {

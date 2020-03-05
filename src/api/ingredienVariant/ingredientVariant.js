@@ -9,6 +9,7 @@ const IngredientVariantSchema = new Schema({
     origin: {
         type: Schema.Types.ObjectId,
         ref: 'Origin',
+        required: true
     },
     brand: {
         type: Schema.Types.ObjectId,
