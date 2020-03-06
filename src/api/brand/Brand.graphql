@@ -15,6 +15,6 @@ type Mutation {
 }
 
 type Query {
-    brand: Brand
+    brand(brand: BrandInput): Brand
     brands: [Brand]
 }
